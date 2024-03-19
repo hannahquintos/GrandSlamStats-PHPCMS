@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+
+/* general */
+.contentWrapper{
+    margin: 0;
+    padding: 0 120px;
+}
+
+/* nav */
+
+#nav{
+    margin: 0;
+    padding: 10px 100px;
+    background-color: #314A33;
+    border-bottom: 15px solid white;
+}
+
+.nav-link:hover{
+    font-weight: 700;
+}
+
+/* home */
+
+#main{
+    background-color: #5D7760;
+    height: calc(100vh - 96px);
+}
+
+#hero{
+    text-align: center;
+    height: calc(100vh - 140px);
+    border-left: 15px solid white;
+    border-right: 15px solid white;
+    margin: 0 120px;
+    display: flex;
+    align-items: center;
+}
+
+#heroText{
+    margin: auto;
+    width: 600px;;
+}
+
+#heroText p{
+    font-size: 1.2em;
+}
+
+#heroBtn{
+    background-color: #DED05A;
+    font-weight: 700;
+}
+
+#heroBtn:hover, .tournamentBtn:hover{
+    color: #5D7760 !important;
+}
+
+#bottomLine{
+    height: 15px;
+    background-color: white;
+}
+
+h1, h2{
+    font-family: "Francois One", sans-serif;;
+}
+
+#logo{
+    display:flex; 
+    align-items:center; 
+    gap:0.5em;
+}
+
+#logo h2{
+    font-size: 1.25em;
+    margin: 0;
+}
+
+.pageHeading{
+    padding: 0.5em 0;
+}
+
+.content{
+    width: auto;
+}
+
+#grandSlamsContainer{
+    padding: 0;
+}
+
+.tournamentBtn{
+    background-color: #DED05A !important;
+    font-weight: 600 !important;
+}
+
+.cardText{
+    padding-left: 1em !important;
+}
+
+#grandSlamContent{
+    margin-bottom: 3em;
+}
+
+.viewBtn{
+    background-color: #DED05A !important;
+}
+
+#finalContent{
+    display: flex;
+    gap: 5em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#playersContainer{
+    padding: 0;
+    margin: 0;
+}
+
+#playerName{
+    margin-bottom: 10px;
+}
+
+#playerCountry{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#playerBirthday{
+    font-weight: 500;
+}
+
+#playerContainer{
+    border: 2px solid #5D7760;
+    border-radius: 15px;
+    margin-top: 2em;
+}
+
+#playerContent{
+    padding: 2em;
+}
+
+.formBtn{
+    background-color: #DED05A !important;
+}
+
+.formContainer{
+    margin: 0;
+    margin-bottom: 4em;
+    padding: 0 120px;
+}
+
+.form-label{
+    font-weight: 500;
+}
+
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+.actionBtns{
+    display: flex;
+}
+
+.actionBtn{
+    color: #5D7760 !important;
+    text-decoration: underline !important;
+}
+
+.addBtn{
+    background-color: #5D7760 !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.headingContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tableBtn{
+    display: flex;
+    justify-content: right;
+}
+
+.player{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#vs{
+    font-size: 1.5em;
+}
+
+#finalScore{
+    font-size: 1.5em;
+    font-weight: 500;
+    background-color: #5D7760;
+    color: white;
+    text-align: center;
+}
+
+#finalDetails{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
