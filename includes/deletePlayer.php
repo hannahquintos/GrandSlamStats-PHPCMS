@@ -15,7 +15,7 @@
 
         if($player){
             // echo("Success");
-            header("Location: ../players.php");
+            header("Location: ../admin/players.php");
         } else{
             echo "Failed: " . mysqli_error($connect);
         }

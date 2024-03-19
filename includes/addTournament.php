@@ -49,7 +49,7 @@
 
         if($final){
             // echo("Success");
-            header("Location: ../tournaments.php");
+            header("Location: ../admin/tournaments.php");
         } else{
             echo "Failed: " . mysqli_error($connect);
         }

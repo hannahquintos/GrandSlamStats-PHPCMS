@@ -1,5 +1,5 @@
 <?php
-    include('includes/connect.php');
+    include('../includes/connect.php');
 
     //get data to be used in form selects (represents relationships between entities)
 
@@ -40,16 +40,16 @@
   <head>
     <meta charset="utf-8">
     <title>Edit Tournament</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   </head>
   <body>
-  <?php include('reusables/nav.php') ?>
+  <?php include('../reusables/nav.php') ?>
     <div class="formContainer">
         <div class="row">
             <div class="col">
             <h1 class="display-5 mt-4 mb-4">Edit Tournament</h1>
-            <form action="includes/updateTournament.php" method="POST">
+            <form action="../includes/updateTournament.php" method="POST">
                 <input type="hidden" id="tournamentId" name="tournamentId" value="<?php echo $tournamentResult['tournamentId'];?>">
                 <div class="mb-3">
                     <label for="grandSlamId" class="form-label">Grand Slam</label>
