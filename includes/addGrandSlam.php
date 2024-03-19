@@ -29,7 +29,7 @@
 
         if($grandSlam){
             // echo("Success");
-            header("Location: ../grandSlams.php");
+            header("Location: ../admin/grandSlams.php");
         } else{
             echo "Failed: " . mysqli_error($connect);
         }

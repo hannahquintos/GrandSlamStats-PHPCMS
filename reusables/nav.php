@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg" id="nav">
         <div class="container-fluid">
             <a id="logo" class="navbar-brand" href="index.php">
-                <img src="images/tennis-ball.png" alt="Tennis ball.">
+                <img src="./images/tennis-ball.png" alt="Tennis ball.">
                 <h2 class="text-white">Grand Slam Stats</h2>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,6 +20,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="players.php">Players</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="login.php">Login</a>
                     </li>
                 </ul>
             </div>
