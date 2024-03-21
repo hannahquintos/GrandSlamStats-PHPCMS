@@ -1,5 +1,5 @@
 <?php
-    include('../includes/connect.php');
+    include('includes/connect.php');
 
     if(isset($_POST['addUser'])){
         $query = 'INSERT INTO users (firstName, lastName, email, password) VALUES (
@@ -9,7 +9,14 @@
             "'. md5($_POST['password']) .'"
         )';
 
-        mysqli_query($connect, $query);
+        $user = mysqli_query($connect, $query);
+
+        if($user){
+            // echo("Success");
+            header("Location: login.php");
+        } else{
+            echo "Failed: " . mysqli_error($connect);
+        }
     }
 ?>
 
@@ -18,10 +25,11 @@
   <head>
     <meta charset="utf-8">
     <title>Users</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
   </head>
   <body>
-  <?php include('../reusables/nav.php') ?>
+  <?php include('reusables/nav.php') ?>
     <div class="container">
         <div class="row">
             <div class="col">

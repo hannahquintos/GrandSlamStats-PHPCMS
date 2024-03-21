@@ -1,5 +1,19 @@
 <?php
     include('includes/connect.php');
+    include( 'includes/config.php' );
+
+    function secure()
+        {
+        
+        if( !isset( $_SESSION['id'] ) )
+        {
+            
+            header( 'Location: /' );
+            die();
+            
+        }
+        
+        }
 
     if(isset($_POST['login'])){
         $query = 'SELECT * 
@@ -54,6 +68,9 @@
                         <input type="password" name="password" class="form-control" id="password" aria-describedby="Password">
                     </div>
                     <button type="submit" name="login" class="btn btn-primary">Submit</button>
+                    <div class="mb-3">
+                    <a href="users.php" class="card-link">Register as a new user</a>
+                    </div>
                 </form>
             </div>
         </div>

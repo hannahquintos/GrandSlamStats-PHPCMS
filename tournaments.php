@@ -57,9 +57,9 @@
 
             <div class="headingContainer">
                 <?php echo '<h1 class="pageHeading">'. $heading .'</h1>';?>
-                <div>
+                <!-- <div>
                     <a class="btn addBtn" href="createTournament.php">Add Tournament +</a>
-                </div>
+                </div> -->
             </div>
 
             <table class="table">
@@ -92,6 +92,7 @@
                                 </td>
                                 <td>
                                     <div class="tableBtn">
+                                        <!--
                                         <form method="GET" action="editTournament.php">
                                             <input type="hidden" name="id" value="' . $tournament['tournamentId'] . '">
                                             <button type="submit" name="edit" class="btn actionBtn">Edit</button>
@@ -100,6 +101,7 @@
                                             <input type="hidden" name="id" value="' . $tournament['tournamentId'] . '">
                                             <button type="submit" name="delete" class="btn actionBtn">Delete</button>
                                         </form>
+                                        -->
                                     </div>
                                 </td>
                                 ';

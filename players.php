@@ -22,9 +22,9 @@
 
           <div class="headingContainer">
               <h1 class="pageHeading">Players</h1>
-              <div>
+              <!-- <div>
                   <a class="btn addBtn" href="createPlayer.php">Add Player +</a>
-              </div>
+              </div> -->
           </div>
       
           <div class="container" id="playersContainer">
@@ -40,6 +40,7 @@
                                   <div class="cardHeader">
                                     <h5 class="card-title">'. $player['firstName'] .' '. $player['lastName'] .'</h5>
                                     <div class="actionBtns">
+                                        <!--
                                         <form method="GET" action="editPlayer.php">
                                             <input type="hidden" name="id" value="' . $player['playerId'] . '">
                                             <button type="submit" name="edit" class="btn actionBtn">Edit</button>
@@ -48,6 +49,7 @@
                                             <input type="hidden" name="id" value="' . $player['playerId'] . '">
                                             <button type="submit" name="delete" class="btn actionBtn">Delete</button>
                                         </form>
+                                        -->
                                     </div>
                                   </div>
                                   <h6 class="card-subtitle mb-2 text-body-secondary">'. $player['country'] .'</h6>

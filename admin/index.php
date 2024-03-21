@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,7 +10,21 @@
   </head>
   <body>
     <?php 
-        include('../reusables/nav.php');
+        include('../reusables/adminnav.php');
+        include( '../includes/config.php' );
+
+        function secure()
+        {
+        
+        if( !isset( $_SESSION['id'] ) )
+        {
+            
+            header( 'Location: /' );
+            die();
+            
+        }
+        
+        }
     ?>
     <main id="main">
       <div id="hero" class="contentWrapper">
