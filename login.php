@@ -46,35 +46,38 @@
   </head>
   <body>
   <?php include('reusables/nav.php') ?>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h1 class="pageHeading">Login</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <form method="POST" action="">
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" name="email" class="form-control" id="email" aria-describedby="Email">
+    <main class="content">
+        <div class="contentWrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
                     </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="password" aria-describedby="Password">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="pageHeading">Login</h1>
                     </div>
-                    <button type="submit" name="login" class="btn formBtn">Login</button>
-                </form>
-                <div id="registerLink">
-                    <a href="users.php">Register as a new user</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <form method="POST" action="">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" name="email" class="form-control" id="email" aria-describedby="Email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" name="password" class="form-control" id="password" aria-describedby="Password">
+                            </div>
+                            <button type="submit" name="login" class="btn formBtn">Login</button>
+                        </form>
+                        <div id="registerLink">
+                            <a href="users.php">Register as a new user</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    </main>
   </body>
 </html>

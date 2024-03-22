@@ -235,3 +235,7 @@ h1, h2{
 .logoutBtn{
     color: #5D7760 !important;
 }
+
+.container{
+    padding-left: 0 !important;
+}

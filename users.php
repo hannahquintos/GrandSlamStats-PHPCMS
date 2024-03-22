@@ -30,34 +30,38 @@
   </head>
   <body>
   <?php include('reusables/nav.php') ?>
-    <div class="container">
-        <div class="row">
-            <div class="col">
+    <main class="content">
+        <div class="contentWrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                    <h1 class="pageHeading">Register</h1>
+                    <form action="" method="POST">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="First Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="Last Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" aria-describedby="Password">
+                        </div>
+                        <button type="submit" name="addUser" class="btn formBtn">Sign Up</button>
+                    </form>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col">
-            <h1 class="pageHeading">Register</h1>
-            <form action="" method="POST">
-                <div class="mb-3">
-                    <label for="firstName" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="First Name">
-                </div>
-                <div class="mb-3">
-                    <label for="lastName" class="form-label">Last Name</label>
-                    <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="Last Name">
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="Email">
-                </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" aria-describedby="Password">
-                </div>
-                <button type="submit" name="addUser" class="btn formBtn">Sign Up</button>
-            </form>
-            </div>
-        </div>
+    </main>
   </body>
 </html>
