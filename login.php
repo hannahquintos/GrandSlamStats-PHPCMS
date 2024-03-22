@@ -53,7 +53,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <h1 class="display-5 mt-4 mb-4">Login</h1>
+                <h1 class="pageHeading">Login</h1>
             </div>
         </div>
         <div class="row">
@@ -67,11 +67,11 @@
                         <label for="password" class="form-label">Password</label>
                         <input type="password" name="password" class="form-control" id="password" aria-describedby="Password">
                     </div>
-                    <button type="submit" name="login" class="btn btn-primary">Submit</button>
-                    <div class="mb-3">
-                    <a href="users.php" class="card-link">Register as a new user</a>
-                    </div>
+                    <button type="submit" name="login" class="btn formBtn">Login</button>
                 </form>
+                <div id="registerLink">
+                    <a href="users.php">Register as a new user</a>
+                </div>
             </div>
         </div>
     </div>

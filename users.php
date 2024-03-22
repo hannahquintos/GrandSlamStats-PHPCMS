@@ -37,7 +37,7 @@
         </div>
         <div class="row">
             <div class="col">
-            <h1 class="display-5 mt-4 mb-4">Manage Users</h1>
+            <h1 class="pageHeading">Register</h1>
             <form action="" method="POST">
                 <div class="mb-3">
                     <label for="firstName" class="form-label">First Name</label>
@@ -55,7 +55,7 @@
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" name="password" aria-describedby="Password">
                 </div>
-                <button type="submit" name="addUser" class="btn btn-primary">Submit</button>
+                <button type="submit" name="addUser" class="btn formBtn">Sign Up</button>
             </form>
             </div>
         </div>

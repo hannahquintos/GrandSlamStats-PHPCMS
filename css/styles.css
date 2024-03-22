@@ -15,6 +15,11 @@
     border-bottom: 15px solid white;
 }
 
+.navbar-nav{
+    display: flex;
+    align-items: center;
+}
+
 .nav-link:hover{
     font-weight: 700;
 }
@@ -206,4 +211,27 @@ h1, h2{
     flex-direction: column;
     justify-content: center;
     width: 400px;
+}
+
+#registerLink{
+    margin-top: 1em;
+}
+
+#registerLink a{
+    color: #314A33;
+}
+
+.loginNav{
+    font-weight: 700 !important;
+    font-size: 1.1em !important;
+}
+
+.loginBtn, .logoutBtn{
+    background-color: white !important;
+    padding: 0.15em 0.5em !important;
+    font-weight: 600 !important;
+}
+
+.logoutBtn{
+    color: #5D7760 !important;
 }

@@ -22,10 +22,9 @@
                         <a class="nav-link text-white" href="players.php">Players</a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="nav-link text-white" href="logout.php">Logout</a> -->
-                        <form action="../logout.php" method="post"> 
-                            <input type="submit" value="Logout"> 
-                        </form> 
+                        <a class="nav-link" href="../logout.php">
+                            <button type="button" class="btn logoutBtn">Logout</button>
+                        </a>
                     </li>
                 </ul>
             </div>
