@@ -22,9 +22,7 @@
                         <a class="nav-link text-white" href="players.php">Players</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../logout.php">
-                            <button type="button" class="btn logoutBtn">Logout</button>
-                        </a>
+                        <a class="nav-link btn logoutBtn" href="../logout.php">Logout</a>
                     </li>
                 </ul>
             </div>

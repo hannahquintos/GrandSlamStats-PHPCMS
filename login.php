@@ -1,41 +1,3 @@
-<?php
-    include('includes/connect.php');
-    include( 'includes/config.php' );
-
-    function secure()
-        {
-        
-        if( !isset( $_SESSION['id'] ) )
-        {
-            
-            header( 'Location: /' );
-            die();
-            
-        }
-        
-        }
-
-    if(isset($_POST['login'])){
-        $query = 'SELECT * 
-                  FROM users 
-                  WHERE email = "'. $_POST['email'] .'"
-                  AND password = "'. md5($_POST['password']) .'"
-                  LIMIT 1';
-    
-        $result = mysqli_query($connect, $query);
-        if(mysqli_num_rows($result)){
-            $record = mysqli_fetch_assoc($result);
-            $_SESSION['id'] = $record['id'];
-            header('Location: admin/index.php');
-            die();
-        } else{
-            header('Location: index.php');
-            die();
-        }
-    }
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -60,14 +22,14 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <form method="POST" action="">
+                        <form method="POST" action="includes/loginUser.php">
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email address</label>
-                                <input type="email" name="email" class="form-control" id="email" aria-describedby="Email">
+                                <input type="email" name="email" class="form-control" id="email" aria-describedby="email">
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
-                                <input type="password" name="password" class="form-control" id="password" aria-describedby="Password">
+                                <input type="password" name="password" class="form-control" id="password" aria-describedby="password">
                             </div>
                             <button type="submit" name="login" class="btn formBtn">Login</button>
                         </form>

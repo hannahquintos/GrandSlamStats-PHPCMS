@@ -22,9 +22,7 @@
                         <a class="nav-link text-white" href="players.php">Players</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php">
-                            <button type="button" class="btn loginBtn">Login</button>
-                        </a>
+                        <a class="nav-link btn loginBtn" href="login.php">Login</a>
                     </li>
                 </ul>
             </div>

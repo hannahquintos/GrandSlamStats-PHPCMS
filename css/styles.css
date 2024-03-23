@@ -230,6 +230,7 @@ h1, h2{
     background-color: white !important;
     padding: 0.15em 0.5em !important;
     font-weight: 600 !important;
+    margin: 1em !important;
 }
 
 .logoutBtn{

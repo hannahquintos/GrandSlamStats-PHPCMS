@@ -22,9 +22,6 @@
         
             <div class="headingContainer">
                 <h1 class="pageHeading">Grand Slams</h1>
-                <!-- <div>
-                    <a class="btn addBtn" href="createGrandSlam.php">Add Grand Slam +</a>
-                </div> -->
             </div>
 
             <div id="grandSlamsContainer" class="container">
@@ -52,18 +49,6 @@
                                                 <div class="card-body">
                                                 <div class="cardHeader">
                                                     <h5 class="card-title">'.$grandSlam['grandSlam'].'</h5>
-                                                    <!--
-                                                    <div class="actionBtns">
-                                                        <form method="GET" action="editGrandSlam.php">
-                                                            <input type="hidden" name="id" value="' . $grandSlam['grandSlamId'] . '">
-                                                            <button type="submit" name="edit" class="btn actionBtn">Edit</button>
-                                                        </form>
-                                                        <form method="GET" action="includes/deleteGrandSlam.php">
-                                                            <input type="hidden" name="id" value="' . $grandSlam['grandSlamId'] . '">
-                                                            <button type="submit" name="delete" class="btn actionBtn">Delete</button>
-                                                        </form>
-                                                    </div>
-                                                    -->
                                                 </div>
                                                 <p class="card-text">'.$grandSlam['description'].'</p>
                                                 <p class="card-text">Location: '.$grandSlam['location'].'</p>

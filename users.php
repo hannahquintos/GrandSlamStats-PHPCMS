@@ -1,25 +1,3 @@
-<?php
-    include('includes/connect.php');
-
-    if(isset($_POST['addUser'])){
-        $query = 'INSERT INTO users (firstName, lastName, email, password) VALUES (
-            "'. mysqli_real_escape_string($connect, $_POST['firstName']) .'",
-            "'. mysqli_real_escape_string($connect, $_POST['lastName']) .'",
-            "'. mysqli_real_escape_string($connect, $_POST['email']) .'",
-            "'. md5($_POST['password']) .'"
-        )';
-
-        $user = mysqli_query($connect, $query);
-
-        if($user){
-            // echo("Success");
-            header("Location: login.php");
-        } else{
-            echo "Failed: " . mysqli_error($connect);
-        }
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -40,28 +18,29 @@
                 <div class="row">
                     <div class="col">
                     <h1 class="pageHeading">Register</h1>
-                    <form action="" method="POST">
+                    <form action="includes/addUser.php" method="POST">
                         <div class="mb-3">
                             <label for="firstName" class="form-label">First Name</label>
-                            <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="First Name">
+                            <input type="text" class="form-control" id="firstName" name="firstName" aria-describedby="firstName">
                         </div>
                         <div class="mb-3">
                             <label for="lastName" class="form-label">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="Last Name">
+                            <input type="text" class="form-control" id="lastName" name="lastName" aria-describedby="lastName">
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" name="email" aria-describedby="Email">
+                            <input type="email" class="form-control" id="email" name="email" aria-describedby="email">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" aria-describedby="Password">
+                            <input type="password" class="form-control" id="password" name="password" aria-describedby="password">
                         </div>
                         <button type="submit" name="addUser" class="btn formBtn">Sign Up</button>
                     </form>
                     </div>
                 </div>
             </div>
+        </div>
     </main>
   </body>
 </html>
