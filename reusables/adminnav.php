@@ -10,7 +10,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-white" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link active text-white" aria-current="page" href="index.php">Dashboard</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="grandSlams.php">Grand Slams</a>
@@ -20,6 +20,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="players.php">Players</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="users.php">Users</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link btn logoutBtn" href="../logout.php">Logout</a>

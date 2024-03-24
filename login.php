@@ -33,9 +33,6 @@
                             </div>
                             <button type="submit" name="login" class="btn formBtn">Login</button>
                         </form>
-                        <div id="registerLink">
-                            <a href="users.php">Register as a new user</a>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -28,7 +28,7 @@
     <div class="formContainer">
         <div class="row">
             <div class="col">
-            <h1 class="display-5 mt-4 mb-4">Create Player</h1>
+            <h1 class="display-5 mt-4 mb-4">Edit Player</h1>
             <form action="../includes/updatePlayer.php" method="POST">
                 <input type="hidden" id="playerId" name="playerId" value="<?php echo $result['playerId'];?>">
                 <div class="mb-3">

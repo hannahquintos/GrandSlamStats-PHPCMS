@@ -13,7 +13,7 @@
 
         if($user){
             // echo("Success");
-            header("Location: ../login.php");
+            header("Location: ../admin/users.php");
         } else{
             echo "Failed: " . mysqli_error($connect);
         }
